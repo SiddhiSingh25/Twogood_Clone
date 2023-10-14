@@ -448,7 +448,7 @@ nav{
         padding: 4em 2rem 0;
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: space-between;
     }
     .img-box{
         height: 92vh;
@@ -459,6 +459,7 @@ nav{
         justify-content: center;
         position: relative;
         flex-wrap: wrap;
+        gap: 2rem;
     }
     .img-box img{
         object-fit: cover;
@@ -558,6 +559,12 @@ nav{
         align-items: center;
         justify-content: center;
     }
+    .page3{
+        min-height: 100vh;
+        width: 100%;
+        padding: 3rem 2rem;
+        position: relative;
+    }
     .page3-para1{
         font-size: 3.4rem;
         width: 100%;
@@ -587,7 +594,7 @@ nav{
     }
     .page3-img img{
         height: 43rem;
-        width: 33rem;
+        width: 100%;
         object-fit: cover;
         object-position: center;
     }
