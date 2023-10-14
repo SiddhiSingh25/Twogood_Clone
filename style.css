@@ -1,7 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+*::-moz-selection{
+    background-color: black;
+    color: #fff;
 }
 *::selection{
     background-color: black;
@@ -20,19 +25,32 @@ html, body{
 nav{
     height: 13.1rem;
     width: 100%;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex ;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 1.5rem 2.2rem;
     z-index: 99;
     position: fixed;
 }
 .nav-part1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     height: 100%;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding: 1rem 0  0 0;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .nav-part1 h1{
     font-size: 3.2rem;
@@ -44,15 +62,23 @@ nav{
 }
  .nav-part2{
     height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 40%;
     margin-bottom:1rem;
  }
  .up-arrow{
     position: relative;
-    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+            transform: rotate(40deg);
     height: 1rem;
     font-weight: 600;
     color: rgb(44, 44, 44);
@@ -70,9 +96,15 @@ nav{
     height: 4rem;
     width: 12rem;
     border-radius:6rem;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: #F7F7F7;
     padding: 0 1rem;
     cursor: pointer;
@@ -83,15 +115,26 @@ nav{
     cursor: pointer;
 }
 .shop-cart:hover{
-    transform: rotate(-15deg), scale(1.5);
+    -webkit-transform: rotate(-15deg), scale(1.5);
+        -ms-transform: rotate(-15deg), scale(1.5);
+            transform: rotate(-15deg), scale(1.5);
 }
 .menubar{
     height: 1.5rem;
     width: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 1.8rem;
     color: rgb(0, 0, 0);
     line-height: 0.6rem;
@@ -103,6 +146,8 @@ nav{
 }
 .menubar:hover{
     line-height: 0.4rem;
+    -webkit-transition: all 0.5s steps(5) 0.1;
+    -o-transition: all 0.5s steps(5) 0.1;
     transition: all 0.5s steps(5) 0.1;
     font-size: 2rem;
     font-weight: 500; 
@@ -125,8 +170,12 @@ nav{
     text-align: center;
 }
 .page1-heading2{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .video-con{
     height: 100vh;
@@ -137,7 +186,8 @@ nav{
 .video-con video{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .play{ 
     width: 10rem;
@@ -148,58 +198,74 @@ nav{
     font-family: Futura;
     font-size: 1.4rem;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     opacity: 0;
     scale: 0;
 }
 .page2{
     min-height: 100vh;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 1.3rem 2.2rem;
     position: relative;
+}
+.page2-img-box{ 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .img-box{
     height: 100%;
     width: 31%;
     background-color: transparent;
     overflow: hidden;  
+    display: -webkit-box;  
+    display: -ms-flexbox;  
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 .img-box img{
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100%;
     width: 100%;
-    object-position: center;
-}
-.box{
-    height: 5rem;
-    width: 32rem;
-    background-color: #C3D8C8;
-    z-index: 2;
-    border-radius: 8rem;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    font-family:Arial, Helvetica, sans-serif;
-    letter-spacing: 0.05rem;  
+    -o-object-position: center;
+       object-position: center;
 }
 .img-box i{
     font-size: 1rem;
     font-weight: 800;
 }
-.sbox:hover > .img-sec { display: flex; }
-.sbox:hover .img-dsrcpt  { display: flex; }
+.sbox:hover > .img-sec { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.sbox:hover .img-dsrcpt  { display: -webkit-box; display: -ms-flexbox; display: flex; }
 .sbox:hover{
     height: 28rem;
     margin-top: 22rem;
@@ -214,9 +280,16 @@ nav{
     text-transform: uppercase;
     font-family:"Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
     letter-spacing: 0.05rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /*margin-top: 22rem;*/
     border-radius: 3rem;  
     z-index: 2;
@@ -227,9 +300,14 @@ nav{
     width: 32rem;
     /*background-color: #C3D8C8;*/
     border-radius: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     font-size: 1.3rem;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
@@ -239,15 +317,22 @@ nav{
 .img-sec{
     height: 50%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     display: none;
 }
 .img-sec img{
     height: 100%;
     width: 50%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .circle-icon{
     font-size: 1rem;
@@ -255,9 +340,15 @@ nav{
 .img-dsrcpt{
     height: 20%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     display: none;
 
 }
@@ -265,11 +356,17 @@ nav{
     width: 50%;
     letter-spacing: -0.1px;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     word-spacing: -0.1px;
     font-size: 13px;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .page3{
     min-height: 100vh;
@@ -285,11 +382,17 @@ nav{
     border-radius: 50%;
     position: fixed;
     opacity: 0;
-    transform: translate(-50%,-50%) scale(0);
+    -webkit-transform: translate(-50%,-50%) scale(0);
+        -ms-transform: translate(-50%,-50%) scale(0);
+            transform: translate(-50%,-50%) scale(0);
 }
 .page3-para-sec{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
 
 }
@@ -312,9 +415,13 @@ nav{
 }
 .page3-img{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     position: relative;
     gap: 5rem;
     margin-top: 10rem;
@@ -323,8 +430,10 @@ nav{
 .page3-img img{
     height: 50rem;
     width: 45rem;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }
 .page4{
     height: 100vh;
@@ -346,17 +455,30 @@ nav{
     height: 23rem;
     width: 26.5rem;
     gap: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     
 }
 .logo-part{
     height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .logo-good h1{
     font-size: 12rem;
@@ -367,7 +489,9 @@ nav{
 .circle1{
     font-size: 12rem;
     opacity: 0;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
     rotate: -2deg;
 
 }
@@ -472,8 +596,23 @@ nav{
             -ms-flex-pack: justify;
                 justify-content: space-between;
     }
+    .page2-img-box{ 
+        display: -webkit-box; 
+        display: -ms-flexbox; 
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
     .img-box{
-        height: 92vh;
+        height: 90vh;
         width: 100%;
         background-color: transparent; 
         display: -webkit-box; 
@@ -486,14 +625,14 @@ nav{
             -ms-flex-pack: center;
                 justify-content: center;
         position: relative;
-        -ms-flex-wrap: wrap;
+        /*-ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        gap: 2rem;
+        gap: 2rem;*/
     }
     .img-box img{
         -o-object-fit: cover;
            object-fit: cover;
-        height: 100%;
+        height: 85vh;
         width: 100%;
         -o-object-position: center;
            object-position: center;
