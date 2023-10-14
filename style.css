@@ -38,7 +38,7 @@ nav{
     font-size: 3.2rem;
     font-family: Futura;
     line-height: 2.8rem;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.05em;
     text-transform:uppercase;
     font-weight: 900;
 }
@@ -384,17 +384,24 @@ nav{
     opacity: 0;
 
 }
-
 @media (max-width:600px){
     nav{
         height: 13.1rem;
         width: 100%;
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex ;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: 1rem 2rem;
     }
     .nav-part2{
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
      }
     .nav-part2 span{
@@ -404,9 +411,14 @@ nav{
         height: 4rem;
         width: 9rem;
         border-radius: 6rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         background-color: #F7F7F7;
         padding: 0 0.2rem;
     }
@@ -421,7 +433,7 @@ nav{
         font-size: 5.7rem;
         font-family: Futura;
         line-height: 5.5rem;
-        letter-spacing: -1px;
+        letter-spacing: -0.05em;
     }
     .video-con{
         height: 35vh;
@@ -432,7 +444,8 @@ nav{
     .video-con video{
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         margin: 2rem 0;
     }
     .play{
@@ -444,28 +457,46 @@ nav{
     .page2{
         padding: 0 2rem;
         min-height: 100vh;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding: 4em 2rem 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .img-box{
         height: 92vh;
         width: 100%;
         background-color: transparent; 
+        display: -webkit-box; 
+        display: -ms-flexbox; 
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         position: relative;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         gap: 2rem;
     }
     .img-box img{
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         height: 100%;
         width: 100%;
-        object-position: center;
+        -o-object-position: center;
+           object-position: center;
     }
     .page3{
         min-height: 100vh;
@@ -480,13 +511,22 @@ nav{
         border-radius: 50%;
         position: fixed;
         opacity: 0;
-        transform: translate(-50%,-50%) scale(0);
+        -webkit-transform: translate(-50%,-50%) scale(0);
+            -ms-transform: translate(-50%,-50%) scale(0);
+                transform: translate(-50%,-50%) scale(0);
     }
     .page3-para-sec{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         width: 100%;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 3rem;
     
     }
@@ -503,8 +543,12 @@ nav{
         text-transform: uppercase;
         font-family:"Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
         letter-spacing: 0.05rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .sbox:hover{
         height: 22rem;
@@ -515,9 +559,14 @@ nav{
         width: 28rem;
         /*background-color: #C3D8C8;*/
         border-radius: 8rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         font-size: 1.3rem;
         text-transform: uppercase;
         font-family: Arial, Helvetica, sans-serif;
@@ -527,15 +576,22 @@ nav{
     .img-sec{
         height: 50%;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         display: none;
     }
     .img-sec img{
         height: 100%;
         width: 50%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
     .circle-icon{
         font-size: 1rem;
@@ -543,9 +599,15 @@ nav{
     .img-dsrcpt{
         height: 20%;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         display: none;
     
     }
@@ -553,11 +615,17 @@ nav{
         width: 50%;
         letter-spacing: -0.1px;
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         word-spacing: -0.1px;
         font-size: 11px;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .page3{
         min-height: 100vh;
@@ -585,9 +653,14 @@ nav{
     }
     .page3-img{
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         position: relative;
         gap: 0rem;
         margin-top: 0;
@@ -595,8 +668,10 @@ nav{
     .page3-img img{
         height: 43rem;
         width: 100%;
-        object-fit: cover;
-        object-position: center;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center;
+           object-position: center;
     }
     .page3-circle{
         height: 5rem;
@@ -635,3 +710,4 @@ nav{
     
     }
 }
+
