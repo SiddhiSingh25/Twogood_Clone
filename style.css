@@ -713,7 +713,7 @@ nav{
         padding-top: 19rem;
     }
     .page1 h1{
-        font-size: 5.7rem;
+        font-size: 5.9rem;
         font-family: Futura;
         line-height: 5.5rem;
         letter-spacing: -0.05em;
@@ -729,7 +729,7 @@ nav{
         width: 100%;
         -o-object-fit: cover;
            object-fit: cover;
-        margin: 2rem 0;
+        margin: 2rem 0 1rem 0;
     }
     .play{
         height: 4rem;
@@ -771,7 +771,7 @@ nav{
                 flex-direction: column;
     }
     .img-box{
-        height: 90vh;
+        height: 80vh;
         width: 100%;
         background-color: transparent; 
         display: -webkit-box; 
@@ -788,7 +788,7 @@ nav{
     .img-box img{
         -o-object-fit: cover;
            object-fit: cover;
-        height: 85vh;
+        height: 77vh;
         width: 100%;
         -o-object-position: center;
            object-position: center;
