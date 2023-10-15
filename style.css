@@ -503,7 +503,171 @@ nav{
     opacity: 0;
 
 }
-@media (max-width:600px){
+
+/*@media (max-width: 850px) and (max-width: 600px) */
+@media screen and (max-width: 850px){
+    nav{
+        height: 14rem;;
+    }
+    .nav-part1 h1{
+        font-size: 3rem;
+    }
+    .nav-part2{
+        height: 40%;
+        width: 45%;
+        margin-bottom:0.8rem;
+     }
+    .nav-part2 span{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    .bar-shop{
+    height : 4rem;
+    width: 9.4REM;
+    padding: 0 0.3rem;
+    }
+    .shop-cart{
+        font-size: 1.8rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .menubar{
+        height: 1.2rem;
+        width: 2.8rem;
+    }
+    .page1{
+        min-height: 80vh;
+        width: 100%;
+        position: relative;
+        padding-top: 24rem;
+    }
+    .page1 h1{
+    font-size: 13rem;
+    font-family: Futura;
+    line-height: 12rem;
+    letter-spacing: -7px;
+    }
+    .video-con{
+        height: 60vh;
+        width: 100%;
+        position: relative;
+        margin-top: 0.5vw;
+    }
+    .video-con video{
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+    }
+    .play{ 
+        width: 7rem;
+        height: 7rem;
+        background-color: black;
+        color: #fff;
+        border-radius: 50%;
+        font-family: Futura;
+        font-size: 1.2rem;
+    }
+    .page2{
+        min-height: 65vh;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 1.3rem 2.2rem;
+        position: relative;
+    }
+    .page2-img-box{ 
+        display: -webkit-box; 
+        display: -ms-flexbox; 
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .img-box{
+        height: 100%;
+        width: 31%;
+        background-color: transparent;
+        overflow: hidden;  
+        display: -webkit-box;  
+        display: -ms-flexbox;  
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: relative;
+    }
+    .img-box img{
+        -o-object-fit: cover;
+           object-fit: cover;
+        height: 100%;
+        width: 100%;
+        -o-object-position: center;
+           object-position: center;
+    }
+    .img-box i{
+        font-size: 0.8rem;
+        font-weight: 800;
+    }
+    .page3-para-sec{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 3rem;
+    
+    }
+    .support{
+        position: relative;
+        left: 35%;
+    }
+    .page3-para1{
+        font-size: 3.4rem;
+        width: 100%;
+        line-height: 3.5rem;
+        letter-spacing: -0.1rem;
+        text-align: center;
+    }
+    .page3-para2{
+        font-size: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        padding: 0 ;
+    }
+    .page3-para2 p{
+        display: inline-block;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .page3-img{
+        margin-top: 0;
+    }
+    .page4 h1{
+        font-size: 3rem;
+    }
+
+  }
+  @media (max-width:600px){
     nav{
         height: 13.1rem;
         width: 100%;
@@ -620,9 +784,6 @@ nav{
             -ms-flex-pack: center;
                 justify-content: center;
         position: relative;
-        /*-ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        gap: 2rem;*/
     }
     .img-box img{
         -o-object-fit: cover;
@@ -844,71 +1005,3 @@ nav{
     
     }
 }
-@media (max-width: 850px) {
-    nav{
-        height: 14rem;;
-    }
-    .nav-part1 h1{
-        font-size: 3rem;
-    }
-    .nav-part2{
-        height: 40%;
-        width: 45%;
-        margin-bottom:0.8rem;
-     }
-    .nav-part2 span{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-    }
-    .bar-shop{
-    height : 4rem;
-    width: 9.4REM;
-    padding: 0 0.3rem;
-    }
-    .shop-cart{
-        font-size: 1.8rem;
-        font-weight: 700;
-        cursor: pointer;
-    }
-    .menubar{
-        height: 1.2rem;
-        width: 2.8rem;
-    }
-    .page1{
-        min-height: 80vh;
-        width: 100%;
-        position: relative;
-        padding-top: 24rem;
-    }
-    .page1 h1{
-    font-size: 13rem;
-    font-family: Futura;
-    line-height: 12rem;
-    letter-spacing: -7px;
-    }
-    .video-con{
-        height: 45vh;
-        width: 100%;
-        position: relative;
-        margin-top: 1vw;
-    }
-    .video-con video{
-        height: 100%;
-        width: 100%;
-        -o-object-fit: contain;
-           object-fit: contain;
-    }
-    .play{ 
-        width: 7rem;
-        height: 7rem;
-        background-color: black;
-        color: #fff;
-        border-radius: 50%;
-        font-family: Futura;
-        font-size: 1.2rem;
-    
-    }
-
-  }
-  
-
