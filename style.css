@@ -114,11 +114,6 @@ nav{
     font-weight: 700;
     cursor: pointer;
 }
-.shop-cart:hover{
-    -webkit-transform: rotate(-15deg), scale(1.5);
-        -ms-transform: rotate(-15deg), scale(1.5);
-            transform: rotate(-15deg), scale(1.5);
-}
 .menubar{
     height: 1.5rem;
     width: 3rem;
@@ -436,7 +431,7 @@ nav{
        object-position: center;
 }
 .page4{
-    height: 100vh;
+    height: 88vh;
     width: 100%;
     padding: 1rem 2.2rem 0 2.2rem;
     
@@ -817,7 +812,7 @@ nav{
         width: 5rem;
     }
     .page4{
-        height: 80vh;
+        height: 70vh;
         width: 100%;
         padding: 1rem 2.2rem 0 2.2rem;
     }
@@ -849,4 +844,71 @@ nav{
     
     }
 }
+@media (max-width: 850px) {
+    nav{
+        height: 14rem;;
+    }
+    .nav-part1 h1{
+        font-size: 3rem;
+    }
+    .nav-part2{
+        height: 40%;
+        width: 45%;
+        margin-bottom:0.8rem;
+     }
+    .nav-part2 span{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    .bar-shop{
+    height : 4rem;
+    width: 9.4REM;
+    padding: 0 0.3rem;
+    }
+    .shop-cart{
+        font-size: 1.8rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .menubar{
+        height: 1.2rem;
+        width: 2.8rem;
+    }
+    .page1{
+        min-height: 80vh;
+        width: 100%;
+        position: relative;
+        padding-top: 24rem;
+    }
+    .page1 h1{
+    font-size: 13rem;
+    font-family: Futura;
+    line-height: 12rem;
+    letter-spacing: -7px;
+    }
+    .video-con{
+        height: 45vh;
+        width: 100%;
+        position: relative;
+        margin-top: 1vw;
+    }
+    .video-con video{
+        height: 100%;
+        width: 100%;
+        -o-object-fit: contain;
+           object-fit: contain;
+    }
+    .play{ 
+        width: 7rem;
+        height: 7rem;
+        background-color: black;
+        color: #fff;
+        border-radius: 50%;
+        font-family: Futura;
+        font-size: 1.2rem;
+    
+    }
+
+  }
+  
 
