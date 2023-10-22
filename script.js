@@ -20,8 +20,8 @@ video.addEventListener("mouseleave", function(){
 })
 video.addEventListener("mousemove", function(dets){ 
     gsap.to(play,{
-        left: dets.x -120,
-        top: dets.y -140,
+        left: dets.x -80,
+        top: dets.y -80,
        }) 
 })
 gsap.from(".page1 h1", {
@@ -39,36 +39,11 @@ gsap.from(".page1 .video-con", {
 })
 
 gsap.from(".nav-part1 h1, .nav-part2 span, .menubar, .shop-cart", {
-    y : -10,
+    y : -20,
     opacity:0,
-    delay:0.1,
-    duration: 0.3,
+    delay:0.2,
+    duration: 1,
 })
-
-/*var vcc =0;
-video.addEventListener("mouseenter", function(){
-    if(vcc=0){
-        gsap.to(".img-box",{
-            delay:0.1,
-            duration:0.5,
-            opacity:1,
-            scale:1.4
-        })
-    
-    }
-    
-})
-/*
-document.querySelector("#box3").addEventListener("mouseenter", function(){
-    gsap.to("#box3", {
-        delay:0.2,
-        duration:0.4,
-        height:'20rem',
-        marginTop: '6rem'
-    })
-
-
-})*/
 //Page3 img cursor animation
 var image1 =document.querySelector(".image1");
 image1.addEventListener("mouseenter", function(){
